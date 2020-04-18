@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class fifteen_task {
     public static void main(String[] args) {
-        System.out.println("Введите размер массива! ");
+        System.out.println("Введите размер массива и его элементы! ");
         Scanner in = new Scanner(System.in);
         int dim = in.nextInt();
         int mass1[] = new int[dim];
@@ -9,7 +9,10 @@ public class fifteen_task {
         for (int i = 0; i < dim; i++) {
             mass1[i] = in.nextInt();
         }
+
         fifteen_task.bubbleSort(mass1); //вызвали функцию сортировки внутри класса
+        System.out.println("Массив отсортирован по возрастанию:");
+
         for (int i = 0; i < dim; i++) {
             System.out.println(mass1[i]);
         }
