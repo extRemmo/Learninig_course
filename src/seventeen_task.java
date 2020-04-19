@@ -3,9 +3,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 public class seventeen_task {
     public static void main(String[] args) {
         String str;
+        sixteen_task rf = new sixteen_task();
+
         BufferedReader br =
                 new BufferedReader(
                         new InputStreamReader(System.in));
